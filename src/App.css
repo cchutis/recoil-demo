@@ -36,3 +36,33 @@
     transform: rotate(360deg);
   }
 }
+
+
+.big-text {
+  font-size: 700px;
+  margin: 0;
+  animation: glow 2s ease-in-out both infinite;
+}
+
+ body {
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 text-align: center;
+	 background: #111;
+	 color: snow;
+   overflow: hidden;
+}
+
+ @keyframes glow {
+	 0%, 100% {
+		 text-shadow: 0 0 8.3333333333px snow, 0 -25px 50px tomato, -25px 25px 50px yellow, 25px 25px 50px tomato;
+	}
+	 33% {
+		 text-shadow: 0 0 8.3333333333px snow, 0 -25px 50px cyan, -25px 25px 50px tomato, 25px 25px 50px cyan;
+	}
+	 66% {
+		 text-shadow: 0 0 8.3333333333px snow, 0 -25px 50px yellow, -25px 25px 50px cyan, 25px 25px 50px yellow;
+	}
+}
+ 
